@@ -4,7 +4,7 @@ MAINTAINER fabricio-godoi <fabricio.n.godoi@gmail.com>
 
 # Checked in 2019-04-25
 # Check version => https://www.gnu.org/software/libc/
-ARG GLIBC_VERSION="2.29"
+ARG GLIBC_VERSION="2.29-r0"
 
 # Install Required Tools for deploying any Android Project
 RUN apk -U update && apk -U add \

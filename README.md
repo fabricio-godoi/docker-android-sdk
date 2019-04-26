@@ -10,12 +10,18 @@ The container uses the alpine version, to be lightweight, which should be enough
 
 Clone the project or just download the [Dockerfile](https://github.com/fabricio-godoi/docker-android-sdk/blob/master/Dockerfile) in any directory of your choice, eg. [DIRECTORY].
 
+* Generate the image:
 
-* Generate the image with:
+```
+docker build -t android-sdk https://github.com/fabricio-godoi/docker-android-sdk.git
+```
+
+* Generate the image locally with:
 
 ```
 cd [DIRECTORY]
-docker build -t android-sdk .
+git clone https://github.com/fabricio-godoi/docker-android-sdk.git
+docker build -t android-sdk ./docker-android-sdk
 ```
 
 * Go to the root of the Android project and run the compiler with:
